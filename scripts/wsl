@@ -7,12 +7,17 @@ function pause() {
 pause "Ready to install some tools, libraries, ... for a development machine ?"
 
 # Just add the commands below to start installing tools, dependencies, ...
+
 sudo apt update
 sudo apt install git -y
 sudo apt install snapd -y
 sudo apt install curl -y
 sudo snap install node --classic --channel=16
 sudo apt install build-essential -y
+sudo apt install neofetch
+sudo apt-get install npm
+npm -g install @vue/cl
+sudo apt install screen -y
 
 # The end
 pause "All done - best to reboot after rest is done"
